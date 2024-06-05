@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html long="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"> 
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/all.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="opacity: 0.7;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+
+                <img src="images/logo.png" alt="" style="width: auto; height: auto;">
+                <span class="text-warning">Fa</span>cotry
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active text-warning" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-warning" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown" style="border: 1px solid rgb(143, 134, 134) ;border-radius: 5px;">
+                    <a class="nav-link dropdown-toggle text-warning" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Trips
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-warning" href="#" >About</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-5" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-warning me-3" type="submit">Search</button>
+                  <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Login
+                  </button>
+                </form>
+              </div>
+            </div>
+          </nav> 
+          <!--modal-->
+
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">login</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Remember me</label>
+                          </div>
+                      </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" style="position:absolute;left:0px;" data-bs-dismiss="modal">Login</button>
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--carousel-->
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators ">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+        <!---->
+        <!-- <div class="row" style="position: absolute; z-index: 5; padding-top: 200px; position: fixed;  ">
+        <div class="col-12 col-md-12 col-lg-12" style="font-size: 50px;">
+
+            
+    <a href="#"><i class="fab fa-facebook  text-light" style="background-color: rgb(109, 109, 69); border-radius: 10px;"></i></a>
+    </div>
+    <div class="col-12 col-md-12 col-lg-12"style="font-size: 50px;">
+        <a href="#"><i class="fab fa-twitter text-light"style="background-color:rgb(109, 109, 69) ; border-radius: 10px;"></i></a>
+        </div>
+        <div class="col-12 col-md-12 col-lg-12"style="font-size: 50px;">
+        <a href="#"><i class="fab fa-youtube text-light "style="background-color:rgb (109, 109, 69); border-radius: 10px;"></i></a>
+        </div>
+        <div class="col-12 col-md-12 col-lg-12"style="font-size: 50px;">
+        <a href="#"><i class="fab fa-linkedin text-light"style="background-color: rgb(109, 109, 69); border-radius: 10px;"></i></a>
+        </div>
+        <div class="col-12 col-md-12 col-lg-12"style="font-size: 50px;">
+        <a href="#"><i class="fab fa-instagram text-light "style="background-color: rgb(109, 109, 69); border-radius: 10px;"></i></a>
+        </div>
+        </div> -->
+        
+        <!---->
+
+           
+            <div class="carousel-inner" style="position: relative;">
+              <div class="carousel-item active">
+                <img src="images/photo-1506059612708-99d6c258160e.jpeg" class="d-block w-100" alt="..." style="height: 100vh;">
+                <div class="carousel-caption  ">
+                  <h5>First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                  <button class="btn btn-outline-warning">Visit us</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/photo-1455587734955-081b22074882.jpeg" class="d-block w-100" alt="..."style="height: 100vh;">
+                <div class="carousel-caption ">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                  <button class="btn btn-outline-warning">Visit us</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/photo-1535007135893-61091db8c179.jpeg" class="d-block w-100" alt="..."style="height: 100vh;">
+                <div class="carousel-caption ">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                  <button class="btn btn-outline-warning">Visit us</button>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+           
+              
+           
+          </div>
+          <!--carousel-->
+          
+          <div class="welcome p-3 bg-dark">
+            <h1 class="title1 text-light">Welcome</h1>
+            <h5 class="pra1 text-light">Are you planning to visit you?We offer the ultimate tour in Egypt,coveringCairo,alex,from a one day trip to a10 day dreamvaction</h5>
+            
+            <button type="button" class="btn btn-outline-warning text-light mt-3">learn more</button>
+          </div>
+          <hr>
+          <!--section2-->
+          <div class="container-fluid section2 bg-dark" style="height: 150px; border-radius: 20px;">
+           
+            <h2 class="title2 text-warning pt-5" style="text-align: center;">Popular destination in Egypt</h2>
+            
+            </div>
+            <div class="accordion accordion-flush mt-5" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed text-warning" style="font-size: 20px;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      GIZA CITY
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Major tourist destinations include the millennia-old monumentsin the nile valley principle among them are the prymidsand great sphink at giza</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed text-warning"style="font-size: 20px;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      LUXORY CITY
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">LUXORY at 500 km south of cairo,is the site of ancient city of thebes it include ruin of temple complexes at karnak and luxor</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed text-warning"style="font-size: 20px;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      SINIA
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">sinia has the beach resorts of sharm el-sheikh ,dahab,numeiba and toba as well as locations mentioned in the bible such as mount sinia</div>
+                  </div>
+                </div>
+              </div> 
+              <!--section2-->
+              <hr>
+              <!--translate-section--> 
+              <div class="translate-section">
+              <p class="h2 title3 text-warning bg-dark pt-4" style="height: 120px;border-radius: 10px; text-align: center; text-transform: capitalize; font-size: 35px;">translate from arabic to english</p>
+               <div class="container-fluid bg-dark" style="height: 280px;">
+              <p class=" title7 text-warning p-3" style="font-size: 30px;">Write and Translate  <span class="press text-light"  style="font-size: 30px";>Press Here</span></p>
+             
+                <button type="button" class="btn  btn-outline-warning " style="margin-left: 20px;" >copy</button>
+              
+              
+              <div class=" translate  text-dark" style="height: 100px;  background-color: rgb(233 227 227);  border-radius: 10px; margin-top: 20px; padding-left: 20px;">
+                translate:
+              </div>
+              </div>
+              
+              </div>
+              <!--translate-section-->
+              <hr>
+              <!--img1-->
+              <div class="container-fluid section3">
+                <div class="section3-overlay"></div>
+              </div>
+              <!--img1-->
+
+              <!--popular-destination--> 
+              <p class="h2 title4 text-warning bg-dark pt-4" style="text-align: center; text-transform: uppercase; font-size: 35px; height: 130px;border-radius: 8px;">Popular Destination in Egypt</p>
+              <section id="popular-destination" class="popular-destination section-padding">
+                <div class="container mt-5 ">
+              
+                    <div class="row " >
+                      <div class="col-12 col-md-12 col-lg-4">
+                        <div class="card " style="width: 20rem; border: white; " >
+                         <div class="card-body">
+                          <div class="img-area mb-2">
+                            <img src="images/photo-1626118788936-29dc02466e96.jpeg" alt="" class="img-fluid"style="height: 400px; width: 100%;">
+                          </div>
+                          
+                          <span class="name-destination text-warning" style="font-weight: bold;">CAIRO</span>
+                          
+                          <button class="btn btn-outline-warning" style="margin-left: 130px;">learn more</button>
+                        
+  
+                       </div>
+  
+                      </div>
+                      </div>
+                      <div class="col-12 col-md-12 col-lg-4">
+                        <div class="card "style="width: 20rem;border: white;" >
+                         <div class="card-body">
+                          <div class="img-area mb-2">
+                           <img src="images/photo-1655241434202-1720647c4a93.jpeg" alt="" class="img-fluid" style= "height:400px; width: 100%;" ></div>
+                           <span class="name-destination text-warning" style="font-weight: bold;">CAIRO</span>
+                           <button class="btn btn-outline-warning"style="margin-left:130px">learn more</button>
+                         </div>
+   
+                        </div>
+   
+                       </div>
+                       <div class="col-12 col-md-12 col-lg-4">
+                        <div class="card" style="width: 20rem;border: white;">
+                         <div class="card-body">
+                          <div class="img-area mb-2">
+                           <img src="images/photo-1655241459367-c95abd34d0bc.jpeg" alt="" class="img-fluid"style="height: 400px; width: 100%;" >
+                           </div>
+                           <span class="name-destination text-warning" style="font-weight: bold;">CAIRO</span>
+                           <button class="btn btn-outline-warning"style="margin-left:130px">learn more</button>
+                         </div>
+   
+                        </div>
+   
+                       </div>
+                       <div class="col-12 col-md-12 col-lg-4 mt-5">
+                        <div class="card " style="width: 20rem;border: white;">
+                         <div class="card-body">
+                          <div class="img-area mb-2">
+                
+                           <img src="images/photo-1655485595749-ab40fbbfc224.jpeg" alt="" class="img-fluid"style="height: 400px; width: 100%;" >
+                           </div>
+                           <span class="name-destination text-warning" style="font-weight: bold;">CAIRO</span>
+                           <button class="btn btn-outline-warning"style="margin-left:130px">learn more</button>
+                         </div>
+   
+                        </div>
+   
+                       </div>
+                       <div class="col-12 col-md-12 col-lg-4 mt-5">
+                       <div class="card"style="width: 20rem;border: white;">
+                        <div class="card-body">
+                          <div class="img-area mb-2">
+                          <img src="images/photo-1626118788936-29dc02466e96.jpeg" alt="" class="img-fluid"style="height: 400px; width: 100%;" >
+                          </div>
+                          <span class="name-destination text-warning" style="font-weight: bold;">CAIRO</span>
+                          <button class="btn btn-outline-warning"style="margin-left:130px">learn more</button>
+                        </div>
+  
+                       </div>
+  
+                      </div>
+                      <div class="col-12 col-md-12 col-lg-4 mt-5">
+                        <div class="card" style="width: 20rem;border: white;">
+                         <div class="card-body">
+                          <div class="img-area mb-2">
+                           <img src="images/photo-1655241459367-c95abd34d0bc.jpeg" alt="" class="img-fluid"style="height: 400px; width: 100%; " >
+                           </div>
+                           <span class="name-destination text-warning" style="font-weight: bold;">CAIRO</span>
+                           <button class="btn btn-outline-warning"style="margin-left:130px">learn more</button>
+                         </div>
+   
+                        </div>
+   
+                       </div>
+                       <div class="col-12 col-md-12 col-lg-6 mt-5">
+                        <div class="card   pb-2" style="width: 20rem;border: white; ">
+                         <div class="card-body">
+                          <div class="img-area mb-2">
+                           <img src="images/photo-1658855268569-f000c4f55523.jpeg" alt="" class="img-fluid"style="height: 400px; width: 100%;" >
+                           </div>
+                           <span class="name-destination text-warning" style="font-weight: bold;">CAIRO</span>
+                           <button class="btn btn-outline-warning"style="margin-left:130px">learn more</button>
+                         </div>
+   
+                        </div>
+   
+                       </div>
+                       <div class="col-12 col-md-12 col-lg-6 mt-5">
+                        <div class="card "style="width: 20rem;border: white; ">
+                         <div class="card-body">
+                          <div class="img-area mb-2">
+                           <img src="images/photo-1626118788936-29dc02466e96.jpeg" alt=""class="img-fluid"style="height: 400px; width: 100%;">
+                           </div>
+                           <span class="name-destinetion text-warning" style="font-weight: bold;">CAIRO</span>
+                           <button class="btn btn-outline-warning"style="margin-left:130px">learn more</button>
+                         </div>
+   
+                        </div>
+   
+                       </div>
+                      
+                    </div>
+                   </div>
+
+                  
+               
+            
+            </section>
+            <!--popular-destination-->
+            <!--img2-->
+            <div class="container-fluid section4">
+                <div class="section4-overlay"></div>
+              </div>
+              <!--img2--> 
+        <!--thanks-->
+        <p class="h2 title4 text-warning bg-dark pt-4 mt-3" style="text-align: center; text-transform: uppercase; font-size: 35px; height: 110px;border-radius: 8px;">thanks for</p>
+        <section id="thanks" class="thanks section-padding">
+            <div class="container mt-5 ">
+          
+                <div class="row " >
+                  <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card " style="width: 20rem; border: white;  " >
+                     <div class="card-body">
+                      <div class="img-area mb-2">
+                        <img src="images/photo-1626118788936-29dc02466e96.jpeg" alt="" class="img-fluid"style="border-radius:15px" >
+                        <div class=" card-img-overlay" style="border-radius: 15px;"></div>
+                        <div class="card-img-overlay content">
+                            <h2 class="title5 text-warning"style="font-size:20px; ">ALL Thanks And Apprection</h2>
+                            <i class="far fa-clock text-warning"> October 15,2022</i>
+                            <div class="circle " style="margin-top: 200px;">
+                            
+                            <img src="images/photo-1626118788936-29dc02466e96.jpeg" alt=""  class="img-fluid  rounded-circle" style="max-height: 100px;">
+                       </div>
+                       <p class="pra5 text-warning" style="font-size: 30px;">cairo hotel</p>
+                        </div>
+                    </div>
+                      </div>
+                        </div>
+                        </div>
+                         <div class="col-12 col-md-12 col-lg-4">
+                            <div class="card " style="width: 20rem; border: white;  " >
+                             <div class="card-body">
+                              <div class="img-area mb-2">
+                                <img src="images/photo-1655241459367-c95abd34d0bc.jpeg" alt="" class="img-fluid"style="border-radius:15px" >
+                                <div class=" card-img-overlay" style="border-radius: 15px;"></div>
+                                <div class="card-img-overlay content">
+                                    <h2 class="title5 text-warning"style="font-size:20px; ">ALL Thanks And Apprection</h2>
+                                    <i class="far fa-clock text-warning"> October 15,2022</i>
+                                    <div class="circle " style="margin-top: 200px;">
+                                    
+                                    <img src="images/photo-1655241459367-c95abd34d0bc.jpeg" alt=""  class="img-fluid  rounded-circle" style="max-height: 100px;">
+                               </div>
+                               <p class="pra5 text-warning" style="font-size: 30px;">cairo hotel</p>
+                                </div>
+                            </div>
+                            </div>
+                            </div>
+                              
+                                </div>
+                                <div class="col-12 col-md-12 col-lg-4">
+                                <div class="card " style="width: 20rem; border: white;  " >
+                            <div class="card-body">
+                         <div class="img-area mb-2">
+                        <img src="images/photo-1655241434202-1720647c4a93.jpeg" alt="" class="img-fluid"style="border-radius:15px" >
+                            <div class=" card-img-overlay" style="border-radius: 15px;"></div>
+                            <div class="card-img-overlay content">
+                            <h2 class="title5 text-warning"style="font-size:20px; ">ALL Thanks And Apprection</h2>
+                            <i class="far fa-clock text-warning"> October 15,2022</i>
+                            <div class="circle " style="margin-top: 200px;">
+                                            
+                            <img src="images/photo-1655241434202-1720647c4a93.jpeg" alt=""  class="img-fluid  rounded-circle" style="max-height: 100px;">
+                            </div>
+                            <p class="pra5 text-warning" style="font-size: 30px;">cairo hotel</p>
+                            </div>
+                    </div>
+                </div>
+                </div>              
+                 
+                </div>
+            </div>
+         </div>
+    </section>
+       <!--thanks-->
+       <hr>
+       <!--podcast-->
+       <p class="h2 title4 text-warning" style="text-align: center; text-transform: uppercase; font-size: 35px; height: 110px;border-radius: 8px;">egypt news</p>
+       <section id="podcast" class="podcast-section-padding ">
+        <div class="container bg-light mt-2">
+          <div class="row">
+            <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+              <div class="podcast-text">
+                <h2 class="title-podcast text-dark">Podcast Title</h2>
+                <i class="fas fa-calendar-alt text-dark"> Mon,May 25th 2020</i>
+                <div class="line " style="background-color: black; height: 5px; width: 70px; border-radius: 2px; margin-top: 10px;"></div>
+                 
+              <p class="pra-product text-dark mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ab maxime sequi nihil ad illum blanditiis minima provident eum sapiente deserunt cum aperiam qui, quasi non? Porro libero beatae voluptatibus!</p>
+              <button class="btn btn-outline-warning">
+              <i class="fas fa-play "> Play Epsoid</i>
+              </button>
+              <button class="btn btn-outline-warning">
+              <i class="far fa-clock"> 55m</i>
+              </button>
+              </div>
+            </div>
+            <div class="col-lg-4 c0l-md-12 col-12">
+              
+              <div class="podcast-img pt-3">
+                <img src="images/photo-1626118788936-29dc02466e96.jpeg" alt="" class="img-fluid" style=" max-height: 400px; width: 500px; margin-block-end: 0px; border-radius: 10px;">
+              </div>
+              </div>
+              </div>
+              </div>
+            </div>
+              </section>
+       <!--podcast--> 
+       <!--join-->
+       
+       <section id="join" class="join section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                  <div class="section-header text-center pb-5">
+                    <h2 class="title-join text-warning" style="font-size: 50px;">Join us</h2>
+                  </div> 
+
+                </div>
+              </div>
+          <div class="row">
+            
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card text-center">
+                  <div class="card-body bg-light">
+                    <h3 class="card-title text-warning">
+                      Subscribe Now
+                    </h3>
+                    
+                    <a href="#"><i class="fab fa-twitter bg-dark" style="font-size: 70px; border-radius: 10px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);"></i></a>
+                    
+                    <p class="card-text text-warning mt-3" style="font-size: 30px;">Go To Link</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="card text-center">
+                  <div class="card-body bg-light">
+                    <h3 class="card-title  text-warning" style="text-transform: capitalize;">
+                      follow
+                    </h3>
+                    
+                    <a href="#"><i class="fab fa-facebook bg-dark" style="font-size: 70px; border-radius: 10px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);"></i></a>
+                    
+                    <p class="card-text text-warning mt-3" style="font-size: 30px;">Go To Link</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="card text-center">
+                  <div class="card-body bg-light">
+                    <h3 class="card-title  text-warning"style="text-transform: capitalize;">
+                      like the page
+                    </h3>
+                    
+                    <a href="#"><i class="fab fa-linkedin-in bg-dark" style="font-size: 70px; border-radius: 10px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);"></i></a>
+                    
+                    <p class="card-text text-warning mt-3" style="font-size: 30px;">Go To Link</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="card text-center">
+                  <div class="card-body bg-light">
+                    <h3 class="card-title  text-warning"style="text-transform: capitalize;">
+                      watch video 
+                    </h3>
+                    <div class="join-icon">
+                    
+                    <a href="#"><i class="fab fa-instagram bg-dark" style="font-size: 70px; border-radius: 10px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);"></i></a>
+                    </div>
+                    <p class="card-text text-warning mt-3" style="font-size: 30px;">Go To Link</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            </div>
+            </section>
+       
+       
+       
+       <!--join--> 
+       <!--footer-->
+        <footer class="bg-dark text-center">
+            <div class="container mt-5">
+                <div class="row pt-5">
+                    <div class="col-12 col-md-12 col-lg-4">
+                    
+                        <img src="images/logo.png" alt="" style="width:100px;" class="rounded-pill"> 
+                            <span class="pra-img text-warning" style="font-size: 30px;">Good Company</span>
+                            <hr class="line2 bg-warning" >
+                            <div class="last-body text-warning">
+                            <p>Tel:000-000-000</p>
+                            <p>Address:EGYPT</p>
+                           
+                            <p>Fax:000-000-000</p>
+                            </div> 
+                            
+                           
+                          </div>
+                          <div class="col-12 col-md-12 col-lg-4">
+                    
+                            <img src="images/logo.png" alt="" style="width:100px;" class="rounded-pill"> 
+                                <span class="pra-img text-warning" style="font-size: 30px;">Good Company</span>
+                                <hr class="line2 bg-warning" >
+                                <div class="last-body text-warning">
+                                <p>Tel:000-000-000</p>
+                                <p>Address:EGYPT</p>
+                               
+                                <p>Fax:000-000-000</p>
+                                </div> 
+                                
+                               
+                              </div>
+                              <div class="col-12 col-md-12 col-lg-4">
+                    
+                                <img src="images/logo.png" alt="" style="width:100px;" class="rounded-pill"> 
+                                    <span class="pra-img text-warning" style="font-size: 30px;">Good Company</span>
+                                    <hr class="line2 bg-warning" >
+                                    <div class="last-body text-warning">
+                                    <p>Tel:000-000-000</p>
+                                    <p>Address:EGYPT</p>
+                                   
+                                    <p>Fax:000-000-000</p>
+                                    </div> 
+                                    
+                                   
+                                  </div>
+                                  <hr>
+                                  <p class=" text-warning" style="font-size: 30px;">COPYRIGHT<i class="far fa-copyright"></i>2020 GOOD COMPANY </p>
+                </div>
+            </div>
+
+        </footer>
+
+       <!--footer-->
+
+               
+
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+            </body>
+            </html>
